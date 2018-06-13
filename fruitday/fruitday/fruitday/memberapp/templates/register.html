@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+    <form action="" method="post">
+       {% csrf_token %}       
+       
+        用户账号<input type="text" name="username"><br>       
+        用户密码<input type="password" name="upwd"><br>   
+        重复密码<input type="password" name="cpwd"><br>   
+        邮箱账号<input type="text" name="email"><br>   
+        电话号码<input type="text" name="phone"><br>   
+        <input type="submit" name="" value="注册"><br>
+                                
+    </form>
+</body>
+</html>
